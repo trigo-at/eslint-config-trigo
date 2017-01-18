@@ -17,8 +17,12 @@
 ```
 module.exports = {
 	extends: 'airbnb-base',
+	plugins: [
+		'mocha',
+	],
 	env: {
 		node: true,
+		mocha: true,
 	},
 	rules: {
 		strict: [0, 'global'],
@@ -35,6 +39,8 @@ module.exports = {
 		'no-underscore-dangle': ['error', { allow: ['_id'] }],
 		'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
 		'import/named': 2,
+		'mocha/no-exclusive-tests': 'error',
 	},
 };
+
 ```
