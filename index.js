@@ -19,7 +19,7 @@ module.exports = {
 			ignoreUrls: true,
 			ignoreComments: false,
 		}],
-		'no-underscore-dangle': ['error', { allow: ['_id'] }],
+		'no-underscore-dangle': ['error', { allow: ['_id'], "allowAfterThis": true, "allowAfterSuper": true }],
 		'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
 		'import/named': 2,
 		'mocha/no-exclusive-tests': 'error',
