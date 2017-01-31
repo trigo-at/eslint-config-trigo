@@ -23,5 +23,12 @@ module.exports = {
 		'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
 		'import/named': 2,
 		'mocha/no-exclusive-tests': 'error',
+		'no-restricted-syntax': [
+			'error',
+			'ForInStatement',
+			'LabeledStatement',
+			'WithStatement',
+		],
+		'no-await-in-loop': 0,
 	},
 };
