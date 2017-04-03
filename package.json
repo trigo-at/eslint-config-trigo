@@ -1,5 +1,5 @@
 {
-  "name": "@trigo/eslint-config-trigo",
+  "name": "eslint-config-trigo",
   "version": "3.1.0",
   "description": "trigo's base JS ESLint config",
   "main": "index.js",
@@ -10,15 +10,15 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "eslint": "^3.13.1",
-    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.2",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-mocha": "^4.8.0"
+    "eslint-plugin-mocha": "^4.9.0"
   },
   "peerDependencies": {
-    "eslint": "^3.13.1",
-    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.2",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-mocha": "^4.8.0"
+    "eslint-plugin-mocha": "^4.9.0"
   }
 }
