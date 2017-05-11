@@ -27,6 +27,7 @@ module.exports = {
 				'_shards',
 				'_source',
 				'_type',
+				'_state',
 			],
 			allowAfterThis: true,
 			allowAfterSuper: true }],
