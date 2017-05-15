@@ -28,6 +28,7 @@ module.exports = {
 				'_source',
 				'_type',
 				'_state',
+				'_embedded',
 			],
 			allowAfterThis: true,
 			allowAfterSuper: true }],
