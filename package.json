@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-trigo",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "trigo's base JS ESLint config",
   "main": "index.js",
   "repository": "https://github.com/trigo-at/eslint-config-trigo.git",
@@ -17,7 +17,7 @@
   },
   "peerDependencies": {
     "eslint": "^3.19.0",
-	"eslint-config-airbnb-base": "^11.2.0",
+    "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-mocha": "^4.9.0"
   }
