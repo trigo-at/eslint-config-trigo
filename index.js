@@ -2,10 +2,12 @@ module.exports = {
 	extends: 'airbnb-base',
 	plugins: [
 		'mocha',
+		'jest',
 	],
 	env: {
 		node: true,
 		mocha: true,
+		jest: true,
 	},
 	rules: {
 		strict: [0, 'global'],
