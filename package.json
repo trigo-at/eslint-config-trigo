@@ -9,16 +9,11 @@
   "scripts": {
     "lint": "eslint ."
   },
-  "devDependencies": {
+  "dependencies": {
     "eslint": "^3.19.0",
-    "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.6.0",
-    "eslint-plugin-mocha": "^4.11.0"
-  },
-  "peerDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-config-airbnb-base": "^11.3.1",
     "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jest": "^20.0.3",
     "eslint-plugin-mocha": "^4.9.0"
   }
 }
