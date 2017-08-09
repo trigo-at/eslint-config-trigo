@@ -2,12 +2,10 @@ module.exports = {
 	extends: 'airbnb-base',
 	plugins: [
 		'mocha',
-		'jest',
 	],
 	env: {
 		node: true,
 		mocha: true,
-		jest: true,
 	},
 	rules: {
 		strict: [0, 'global'],
@@ -44,6 +42,6 @@ module.exports = {
 			'WithStatement',
 		],
 		'no-await-in-loop': 0,
-		'no-unused-vars': ['warn', { vars: 'local', args: 'after-used', ignoreRestSiblings: true }]
+		'no-unused-vars': ['warn', { vars: 'local', args: 'after-used', ignoreRestSiblings: true }],
 	},
 };
