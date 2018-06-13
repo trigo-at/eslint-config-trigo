@@ -12,10 +12,10 @@ module.exports = {
 		indent: [1, 'tab', { SwitchCase: 1, VariableDeclarator: 1 }],
 		'no-tabs': 0,
 		'no-plusplus': 0,
-		'arrow-body-style': [2, 'as-needed', { requireReturnForObjectLiteral: true }],
+		'arrow-body-style': [1, 'as-needed'],
 		'arrow-parens': [2, 'as-needed', { requireForBlockBody: true }],
 		'no-console': [1, { allow: ['warn'] }],
-		'max-len': [2, 160, 2, {
+		'max-len': [2, 120, 2, {
 			ignoreUrls: true,
 			ignoreComments: false,
 		}],
@@ -31,7 +31,8 @@ module.exports = {
 				'_embedded',
 			],
 			allowAfterThis: true,
-			allowAfterSuper: true }],
+			allowAfterSuper: true,
+		}],
 		'import/no-extraneous-dependencies': ['warn', { devDependencies: true }],
 		'import/named': 2,
 		'mocha/no-exclusive-tests': 'error',
