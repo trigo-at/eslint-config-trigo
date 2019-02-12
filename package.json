@@ -9,8 +9,7 @@
   "scripts": {
     "lint": "eslint \"**/*.{js,jsx}\"",
     "prettify": "prettier --write '**/*.{js,jsx}'",
-    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
-    "postinstall": "./postinstall.sh"
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
   },
   "lint-staged": {
     "*.{js,jsx}": [
