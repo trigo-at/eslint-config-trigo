@@ -10,7 +10,7 @@
     "lint": "eslint \"**/*.{js,jsx}\"",
     "prettify": "prettier --write '**/*.{js,jsx}'",
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
-    "postinstall": "cd $INIT_CWD && npx install-peerdeps eslint-config-trigo --only-peers"
+    "postinstall": "install-peerdeps eslint-config-trigo --dev --only-peers"
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -54,5 +54,8 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "dependencies": {
+    "install-peerdeps": "^1.10.2"
   }
 }
