@@ -54,7 +54,5 @@
       "pre-commit": "lint-staged"
     }
   },
-  "dependencies": {
-    "install-peerdeps": "^1.10.2"
-  }
+  "dependencies": {}
 }
