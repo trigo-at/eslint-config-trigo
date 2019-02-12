@@ -10,7 +10,7 @@
     "lint": "eslint \"**/*.{js,jsx}\"",
     "prettify": "prettier --write '**/*.{js,jsx}'",
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
-    "postinstall": "cd ../.. && npx install-peerdeps eslint-config-trigo --dev --only-peers"
+    "postinstall": "cd $INIT_CWD && npx install-peerdeps eslint-config-trigo --only-peers"
   },
   "lint-staged": {
     "*.{js,jsx}": [
