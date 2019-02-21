@@ -50,6 +50,7 @@ module.exports = {
         'react/no-unused-state': 'warn',
         'react/jsx-handler-names': 'warn',
         'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'warning',
     },
     settings: {
         polyfills: ['fetch'],
