@@ -1,9 +1,9 @@
 module.exports = {
     extends: 'airbnb-base',
-    plugins: ['jest'],
+    plugins: ['mocha'],
     env: {
         node: true,
-        jest: true,
+        mocha: true,
     },
     rules: {
         strict: [0, 'global'],
@@ -35,9 +35,5 @@ module.exports = {
         'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
         'no-await-in-loop': 0,
         'no-unused-vars': ['warn', {vars: 'local', args: 'after-used', ignoreRestSiblings: true}],
-        'jest/no-disabled-tests': 'warn',
-        'jest/no-focused-tests': 'error',
-        'jest/no-identical-title': 'error',
-        'jest/valid-expect': 'error',
     },
 };
