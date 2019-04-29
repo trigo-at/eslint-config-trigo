@@ -1,6 +1,6 @@
 module.exports = {
     extends: 'airbnb-base',
-    plugins: ['mocha'],
+    plugins: ['jest'],
     env: {
         node: true,
         mocha: true,
@@ -32,7 +32,6 @@ module.exports = {
         ],
         'import/no-extraneous-dependencies': ['warn', {devDependencies: true}],
         'import/named': 2,
-        'mocha/no-exclusive-tests': 'error',
         'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
         'no-await-in-loop': 0,
         'no-unused-vars': ['warn', {vars: 'local', args: 'after-used', ignoreRestSiblings: true}],
