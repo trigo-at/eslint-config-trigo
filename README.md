@@ -2,12 +2,28 @@
 
 ## install
 
-`yarn add -D /eslint-config-trigo`
+`npm install --save-dev eslint-config-trigo`
 
-## usage
+## usage (node + jest)
 
 ```
 {
-	"extends": "eslint-config-trigo"
+	"extends": ["trigo"]
+}
+```
+
+## usage (node + mocha)
+
+```
+{
+	"extends": ["trigo/mocha"]
+}
+```
+
+## usage (react + jest)
+
+```
+{
+	"extends": ["trigo/react"]
 }
 ```
