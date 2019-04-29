@@ -1,7 +1,7 @@
 module.exports = {
     extends: 'airbnb',
     parser: 'babel-eslint',
-    plugins: ['jest', 'compat', 'react-hooks'],
+    plugins: ['jest', 'compat', 'react-hooks', 'filenames'],
     env: {
         node: true,
         jest: true,
@@ -51,6 +51,7 @@ module.exports = {
         'react/jsx-handler-names': 'warn',
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',
+        'filenames/match-exported': 2,
     },
     settings: {
         polyfills: ['fetch'],

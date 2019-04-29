@@ -1,6 +1,6 @@
 module.exports = {
     extends: 'airbnb-base',
-    plugins: ['jest'],
+    plugins: ['jest', 'filenames'],
     env: {
         node: true,
         jest: true,
@@ -39,5 +39,6 @@ module.exports = {
         'jest/no-focused-tests': 'error',
         'jest/no-identical-title': 'error',
         'jest/valid-expect': 'error',
+        'filenames/match-exported': 2,
     },
 };
