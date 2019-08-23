@@ -37,6 +37,8 @@ module.exports = {
         'react/no-unused-state': 'error',
         'react/jsx-handler-names': 'error',
         'react-hooks/rules-of-hooks': 'error',
+        'react/jsx-props-no-spreading': 0,
+        'react/forbid-prop-types': 0,
         'filenames/match-regex': [2, '^[a-z0-9-.]+$', true],
         'filenames/match-exported': [2, 'kebab'],
         'import/no-extraneous-dependencies': [
