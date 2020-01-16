@@ -17,3 +17,4 @@ __snapshots__
 .gitkeep
 coverage
 jest.setup.js
+.prettierrc.json
