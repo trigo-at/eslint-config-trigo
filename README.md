@@ -12,14 +12,6 @@
 }
 ```
 
-## usage (node + mocha)
-
-```
-{
-	"extends": ["trigo/mocha"]
-}
-```
-
 ## usage (react + jest)
 
 ```
