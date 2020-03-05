@@ -9,7 +9,8 @@ module.exports = {
     },
     rules: {
         strict: [0, 'global'],
-        indent: [1, 'tab', {SwitchCase: 1, VariableDeclarator: 1}],
+        indent: [1, 4, {SwitchCase: 1, VariableDeclarator: 1}],
+        'no-tabs': 0,
         'no-console': [1, {allow: ['warn']}],
         'max-len': [
             2,
