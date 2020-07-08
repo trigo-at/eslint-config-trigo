@@ -4,18 +4,34 @@
 
 `npm install --save-dev eslint-config-trigo`
 
-## usage (node + jest)
+## usage (node)
 
 ```
 {
-	"extends": ["trigo"]
+	"extends": ["trigo/node"]
 }
 ```
 
-## usage (react + jest)
+## usage (node + typescript)
+
+```
+{
+	"extends": ["trigo/node-typescript"]
+}
+```
+
+## usage (react)
 
 ```
 {
 	"extends": ["trigo/react"]
+}
+```
+
+## usage (react + typescript)
+
+```
+{
+	"extends": ["trigo/react-typescript"]
 }
 ```
