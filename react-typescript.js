@@ -12,10 +12,10 @@ const reactTypescript = {
         'import/no-unresolved': 0,
         'default-case': 0,
     },
-    extends: ['airbnb', 'plugin:@typescript-eslint/recommended'],
     overrides: [
         {
-            files: ['*.ts', '*.tsx'],
+            files: ['**/*.ts', '**/*.tsx'],
+            extends: ['airbnb', 'plugin:@typescript-eslint/recommended'],
             parser: '@typescript-eslint/parser',
             plugins: ['@typescript-eslint'],
             parserOptions: {
