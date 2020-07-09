@@ -23,7 +23,6 @@ const reactTypescript = {
             },
             rules: {
                 '@typescript-eslint/no-unused-vars': 'error',
-                '@typescript-eslint/class-name-casing': 'error',
                 '@typescript-eslint/member-delimiter-style': 'error',
                 '@typescript-eslint/member-ordering': 'error',
                 '@typescript-eslint/type-annotation-spacing': 'error',
@@ -31,6 +30,7 @@ const reactTypescript = {
                 '@typescript-eslint/prefer-interface': 0,
                 '@typescript-eslint/no-namespace': 'error',
                 '@typescript-eslint/ban-ts-ignore': 0,
+                '@typescript-eslint/no-var-requires': 0,
             },
             settings: {
                 'import/resolver': {
