@@ -22,7 +22,6 @@ const nodeTypescript = {
             plugins: ['@typescript-eslint'],
             rules: {
                 '@typescript-eslint/no-unused-vars': 'error',
-                '@typescript-eslint/class-name-casing': 'error',
                 '@typescript-eslint/member-delimiter-style': 'error',
                 '@typescript-eslint/member-ordering': 'error',
                 '@typescript-eslint/type-annotation-spacing': 'error',
