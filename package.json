@@ -18,8 +18,8 @@
     ]
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^3",
-    "@typescript-eslint/parser": "^3",
+    "@typescript-eslint/eslint-plugin": "^4",
+    "@typescript-eslint/parser": "^4",
     "babel-eslint": "^10",
     "eslint": "^7",
     "eslint-config-airbnb": "^18",
@@ -34,8 +34,8 @@
     "typescript": "^4"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.4.0",
-    "@typescript-eslint/parser": "^4.4.0",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.4.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.11.0",
     "eslint-config-airbnb": "^18.2.0",
