@@ -1,8 +1,13 @@
 module.exports = {
     extends: 'airbnb-base',
     plugins: ['jest', 'filenames'],
+    parserOptions: {
+        ecmaVersion: 12,
+        sourceType: 'module',
+    },
     env: {
         node: true,
+        es2021: true,
         jest: true,
     },
     rules: {

@@ -1,10 +1,18 @@
 module.exports = {
-    extends: ['airbnb'],
+    extends: ['plugin:react/recommended', 'airbnb'],
     parser: '@babel/eslint-parser',
-    plugins: ['jest', 'react-hooks', 'filenames'],
+    parserOptions: {
+        ecmaFeatures: {
+            jsx: true,
+        },
+        ecmaVersion: 12,
+        sourceType: 'module',
+    },
+    plugins: ['react', 'jest', 'filenames'],
     env: {
         node: true,
         jest: true,
+        es2021: true,
         browser: true,
     },
     rules: {
@@ -51,9 +59,5 @@ module.exports = {
             },
         ],
         'import/no-namespace': 'error',
-    },
-    settings: {
-        polyfills: ['fetch'],
-        compiler: 'babel',
     },
 };

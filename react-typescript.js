@@ -15,11 +15,13 @@ const reactTypescript = {
     overrides: [
         {
             files: ['**/*.ts', '**/*.tsx'],
-            extends: ['airbnb', 'plugin:@typescript-eslint/recommended'],
+            extends: ['plugin:react/recommended', 'airbnb'],
             parser: '@typescript-eslint/parser',
-            plugins: ['@typescript-eslint'],
+            plugins: ['react', '@typescript-eslint'],
             parserOptions: {
                 ecmaFeatures: {jsx: true},
+                ecmaVersion: 12,
+                sourceType: 'module',
             },
             rules: {
                 '@typescript-eslint/no-unused-vars': 'error',
