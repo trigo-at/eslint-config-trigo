@@ -7,9 +7,6 @@ module.exports = {
         },
         ecmaVersion: 12,
         sourceType: 'module',
-        babelOptions: {
-            configFile: './.babelrc',
-        },
     },
     settings: {
         'import/parsers': {
