@@ -1,5 +1,5 @@
 module.exports = {
-    extends: ['plugin:react/recommended', 'airbnb'],
+    extends: ['plugin:react/recommended', 'airbnb', 'airbnb/hooks'],
     parser: '@babel/eslint-parser',
     parserOptions: {
         ecmaFeatures: {
