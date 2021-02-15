@@ -5,6 +5,11 @@ module.exports = {
         ecmaVersion: 12,
         sourceType: 'module',
     },
+    settings: {
+        'import/parsers': {
+            espree: ['.js', '.jsx', '.ts', '.tsx'],
+        },
+    },
     env: {
         node: true,
         es2021: true,

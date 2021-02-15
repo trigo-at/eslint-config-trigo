@@ -2,6 +2,9 @@ const reactConfig = require('./react');
 
 const reactTypescript = {
     ...reactConfig,
+    settings: {
+        ...reactConfig.settings,
+    },
     rules: {
         ...reactConfig.rules,
         'react/jsx-filename-extension': [1, {extensions: ['.tsx', '.jsx']}],
@@ -22,7 +25,6 @@ const reactTypescript = {
                 ecmaFeatures: {jsx: true},
                 ecmaVersion: 12,
                 sourceType: 'module',
-                requireConfigFile: false,
             },
             rules: {
                 '@typescript-eslint/no-unused-vars': 'error',
