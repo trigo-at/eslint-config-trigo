@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-trigo",
-  "version": "16.0.7",
+  "version": "16.0.8",
   "description": "trigo's base JS ESLint config",
   "main": "index.js",
   "repository": "https://github.com/trigo-at/eslint-config-trigo.git",
