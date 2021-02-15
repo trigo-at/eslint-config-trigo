@@ -14,7 +14,7 @@ module.exports = {
             espree: ['.js', '.jsx', '.ts', '.tsx'],
         },
     },
-    plugins: ['react', 'jest', 'filenames'],
+    plugins: ['@babel', 'react', 'jest', 'filenames'],
     env: {
         node: true,
         jest: true,
