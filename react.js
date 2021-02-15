@@ -7,6 +7,12 @@ module.exports = {
         },
         ecmaVersion: 12,
         sourceType: 'module',
+        requireConfigFile: false,
+    },
+    settings: {
+        'import/parsers': {
+            espree: ['.js', '.jsx', '.ts', '.tsx'],
+        },
     },
     plugins: ['react', 'jest', 'filenames'],
     env: {

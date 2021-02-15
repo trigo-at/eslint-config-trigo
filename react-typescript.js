@@ -22,6 +22,7 @@ const reactTypescript = {
                 ecmaFeatures: {jsx: true},
                 ecmaVersion: 12,
                 sourceType: 'module',
+                requireConfigFile: false,
             },
             rules: {
                 '@typescript-eslint/no-unused-vars': 'error',
