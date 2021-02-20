@@ -1,10 +1,6 @@
 module.exports = {
     extends: 'airbnb-base',
     plugins: ['jest', 'filenames'],
-    parserOptions: {
-        ecmaVersion: 12,
-        sourceType: 'module',
-    },
     settings: {
         'import/parsers': {
             espree: ['.js', '.jsx', '.ts', '.tsx'],

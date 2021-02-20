@@ -14,16 +14,16 @@ const nodeTypescript = {
         'import/no-unresolved': 0,
         'default-case': 0,
     },
-    extends: ['airbnb-base', 'plugin:@typescript-eslint/recommended'],
     overrides: [
         {
-            files: ['*.ts', '*.tsx'],
+            files: ['**/*.ts', '**/*.tsx'],
+            extends: ['plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'airbnb-base'],
+            plugins: ['@typescript-eslint', 'jest', 'filenames'],
             parser: '@typescript-eslint/parser',
             parserOptions: {
-                ecmaVersion: 12,
+                ecmaVersion: 2021,
                 sourceType: 'module',
             },
-            plugins: ['@typescript-eslint'],
             rules: {
                 '@typescript-eslint/no-unused-vars': 'error',
                 '@typescript-eslint/member-delimiter-style': 'error',
@@ -33,6 +33,14 @@ const nodeTypescript = {
                 '@typescript-eslint/prefer-interface': 0,
                 '@typescript-eslint/ban-ts-ignore': 0,
                 '@typescript-eslint/no-var-requires': 0,
+            },
+            settings: {
+                'import/resolver': {
+                    node: {
+                        extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.mjs'],
+                    },
+                },
+                'import/extensions': ['.js', '.jsx', '.ts', '.tsx', '.json', '.mjs'],
             },
         },
     ],

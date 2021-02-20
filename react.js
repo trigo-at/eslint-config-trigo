@@ -5,12 +5,15 @@ module.exports = {
         ecmaFeatures: {
             jsx: true,
         },
-        ecmaVersion: 12,
+        ecmaVersion: 2021,
         sourceType: 'module',
     },
     settings: {
         'import/parsers': {
             espree: ['.js', '.jsx', '.ts', '.tsx'],
+        },
+        react: {
+            version: 'detect',
         },
     },
     plugins: ['@babel', 'react', 'jest', 'filenames'],

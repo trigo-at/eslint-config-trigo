@@ -1,3 +1,4 @@
+.babelrc.json
 .editorconfig
 .eslintignore
 .eslintrc.json
@@ -17,3 +18,4 @@ __snapshots__
 coverage
 jest.setup.js
 .prettierrc.json
+.husky/

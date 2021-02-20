@@ -18,12 +18,14 @@ const reactTypescript = {
     overrides: [
         {
             files: ['**/*.ts', '**/*.tsx'],
-            extends: ['plugin:react/recommended', 'airbnb'],
+            extends: ['plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'airbnb', 'airbnb/hooks'],
             parser: '@typescript-eslint/parser',
-            plugins: ['react', '@typescript-eslint'],
+            plugins: ['@typescript-eslint', 'react', 'jest', 'filenames'],
             parserOptions: {
-                ecmaFeatures: {jsx: true},
-                ecmaVersion: 12,
+                ecmaFeatures: {
+                    jsx: true,
+                },
+                ecmaVersion: 2021,
                 sourceType: 'module',
             },
             rules: {
@@ -44,6 +46,9 @@ const reactTypescript = {
                     },
                 },
                 'import/extensions': ['.js', '.jsx', '.ts', '.tsx', '.json', '.mjs'],
+                react: {
+                    version: 'detect',
+                },
             },
         },
     ],
