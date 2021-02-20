@@ -1,6 +1,7 @@
 module.exports = {
-    extends: ['plugin:react/recommended', 'airbnb', 'airbnb/hooks'],
     parser: '@babel/eslint-parser',
+    plugins: ['@babel', 'react', 'jest', 'filenames'],
+    extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:jest/recommended', 'airbnb', 'airbnb/hooks'],
     parserOptions: {
         ecmaFeatures: {
             jsx: true,
@@ -16,7 +17,7 @@ module.exports = {
             version: 'detect',
         },
     },
-    plugins: ['@babel', 'react', 'jest', 'filenames'],
+
     env: {
         node: true,
         jest: true,

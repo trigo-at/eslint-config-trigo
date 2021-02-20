@@ -1,6 +1,9 @@
 module.exports = {
-    extends: 'airbnb-base',
-    plugins: ['jest', 'filenames'],
+    extends: ['eslint:recommended', 'plugin:jest/recommended', 'plugin:node/recommended', 'airbnb-base'],
+    parserOptions: {
+        ecmaVersion: 2021,
+    },
+    plugins: ['jest', 'filenames', 'node'],
     settings: {
         'import/parsers': {
             espree: ['.js', '.jsx', '.ts', '.tsx'],

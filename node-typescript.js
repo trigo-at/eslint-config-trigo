@@ -7,7 +7,6 @@ const nodeTypescript = {
     },
     rules: {
         ...nodeConfig.rules,
-        'react/prop-types': 0,
         'no-unused-vars': 0,
         'import/named': 0,
         'import/prefer-default-export': 0,
@@ -17,12 +16,17 @@ const nodeTypescript = {
     overrides: [
         {
             files: ['**/*.ts', '**/*.tsx'],
-            extends: ['plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'airbnb-base'],
-            plugins: ['@typescript-eslint', 'jest', 'filenames'],
+            extends: [
+                'eslint:recommended',
+                'plugin:@typescript-eslint/recommended',
+                'plugin:jest/recommended',
+                'plugin:node/recommended',
+                'airbnb-base',
+            ],
+            plugins: ['@typescript-eslint', 'jest', 'filenames', 'node'],
             parser: '@typescript-eslint/parser',
             parserOptions: {
                 ecmaVersion: 2021,
-                sourceType: 'module',
             },
             rules: {
                 '@typescript-eslint/no-unused-vars': 'error',
