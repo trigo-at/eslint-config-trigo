@@ -25,6 +25,7 @@ const reactTypescript = {
                 'plugin:@typescript-eslint/recommended',
                 'plugin:jest/recommended',
                 'plugin:react/recommended',
+                'plugin:import/typescript',
                 'airbnb',
                 'airbnb/hooks',
             ],
@@ -49,10 +50,26 @@ const reactTypescript = {
             settings: {
                 'import/resolver': {
                     node: {
-                        extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.mjs'],
+                        extensions: [
+                            '.js',
+                            '.jsx',
+                            '.ts',
+                            '.tsx',
+                            '.d.ts',
+                            '.json',
+                            '.mjs',
+                        ],
                     },
                 },
-                'import/extensions': ['.js', '.jsx', '.ts', '.tsx', '.json', '.mjs'],
+                'import/extensions': [
+                    '.js',
+                    '.jsx',
+                    '.ts',
+                    '.tsx',
+                    '.d.ts',
+                    '.json',
+                    '.mjs',
+                ],
                 react: {
                     version: 'detect',
                 },

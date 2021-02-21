@@ -1,5 +1,10 @@
 module.exports = {
-    extends: ['eslint:recommended', 'plugin:jest/recommended', 'plugin:node/recommended', 'airbnb-base'],
+    extends: [
+        'eslint:recommended',
+        'plugin:jest/recommended',
+        'plugin:node/recommended',
+        'airbnb-base',
+    ],
     parserOptions: {
         ecmaVersion: 2021,
     },
@@ -34,7 +39,16 @@ module.exports = {
         'no-underscore-dangle': [
             'error',
             {
-                allow: ['_id', '_index', '_score', '_shards', '_source', '_type', '_state', '_embedded'],
+                allow: [
+                    '_id',
+                    '_index',
+                    '_score',
+                    '_shards',
+                    '_source',
+                    '_type',
+                    '_state',
+                    '_embedded',
+                ],
                 allowAfterThis: true,
                 allowAfterSuper: true,
             },
@@ -49,9 +63,17 @@ module.exports = {
         ],
         'import/no-namespace': 'error',
         'import/named': 2,
-        'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
+        'no-restricted-syntax': [
+            'error',
+            'ForInStatement',
+            'LabeledStatement',
+            'WithStatement',
+        ],
         'no-await-in-loop': 0,
-        'no-unused-vars': ['warn', {vars: 'local', args: 'after-used', ignoreRestSiblings: true}],
+        'no-unused-vars': [
+            'warn',
+            {vars: 'local', args: 'after-used', ignoreRestSiblings: true},
+        ],
         'jest/no-disabled-tests': 'error',
         'jest/no-focused-tests': 'error',
         'jest/no-identical-title': 'error',

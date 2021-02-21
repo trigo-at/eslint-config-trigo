@@ -1,7 +1,13 @@
 module.exports = {
     parser: '@babel/eslint-parser',
     plugins: ['@babel', 'react', 'jest', 'filenames'],
-    extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:jest/recommended', 'airbnb', 'airbnb/hooks'],
+    extends: [
+        'eslint:recommended',
+        'plugin:react/recommended',
+        'plugin:jest/recommended',
+        'airbnb',
+        'airbnb/hooks',
+    ],
     parserOptions: {
         ecmaFeatures: {
             jsx: true,
@@ -41,10 +47,24 @@ module.exports = {
         'no-underscore-dangle': [
             'error',
             {
-                allow: ['_id', '_index', '_score', '_shards', '_source', '_type', '_state', '_embedded'],
+                allow: [
+                    '_id',
+                    '_index',
+                    '_score',
+                    '_shards',
+                    '_source',
+                    '_type',
+                    '_state',
+                    '_embedded',
+                ],
             },
         ],
-        'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
+        'no-restricted-syntax': [
+            'error',
+            'ForInStatement',
+            'LabeledStatement',
+            'WithStatement',
+        ],
         'no-await-in-loop': 0,
         'no-param-reassign': ['error', {props: false}],
         'prefer-destructuring': 0,

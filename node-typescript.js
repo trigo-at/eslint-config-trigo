@@ -21,6 +21,7 @@ const nodeTypescript = {
                 'plugin:@typescript-eslint/recommended',
                 'plugin:jest/recommended',
                 'plugin:node/recommended',
+                'plugin:import/typescript',
                 'airbnb-base',
             ],
             plugins: ['@typescript-eslint', 'jest', 'filenames', 'node'],
@@ -41,10 +42,24 @@ const nodeTypescript = {
             settings: {
                 'import/resolver': {
                     node: {
-                        extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.mjs'],
+                        extensions: [
+                            '.js',
+                            '.jsx',
+                            '.ts',
+                            '.tsx',
+                            '.json',
+                            '.mjs',
+                        ],
                     },
                 },
-                'import/extensions': ['.js', '.jsx', '.ts', '.tsx', '.json', '.mjs'],
+                'import/extensions': [
+                    '.js',
+                    '.jsx',
+                    '.ts',
+                    '.tsx',
+                    '.json',
+                    '.mjs',
+                ],
             },
         },
     ],
