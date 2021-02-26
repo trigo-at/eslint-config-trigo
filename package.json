@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-trigo",
-  "version": "16.0.8",
+  "version": "17.0.0",
   "description": "TRIGO ESLint config",
   "main": "node.js",
   "repository": "https://github.com/trigo-at/eslint-config-trigo.git",
