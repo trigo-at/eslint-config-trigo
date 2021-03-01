@@ -2,19 +2,6 @@ const reactConfig = require('./react');
 
 const reactTypescript = {
     ...reactConfig,
-    settings: {
-        ...reactConfig.settings,
-    },
-    rules: {
-        ...reactConfig.rules,
-        'react/jsx-filename-extension': [1, {extensions: ['.tsx', '.jsx']}],
-        'react/prop-types': 0,
-        'no-unused-vars': 0,
-        'import/named': 0,
-        'import/prefer-default-export': 0,
-        'import/no-unresolved': 0,
-        'default-case': 0,
-    },
     overrides: [
         {
             files: ['**/*.ts', '**/*.tsx'],
@@ -37,6 +24,17 @@ const reactTypescript = {
                 sourceType: 'module',
             },
             rules: {
+                'react/jsx-filename-extension': [
+                    1,
+                    {extensions: ['.tsx', '.jsx']},
+                ],
+                'react/prop-types': 0,
+                'no-unused-vars': 0,
+                'import/named': 0,
+                'import/prefer-default-export': 0,
+                'import/no-unresolved': 0,
+                'default-case': 0,
+                'no-use-before-define': 0,
                 '@typescript-eslint/no-unused-vars': 'error',
                 '@typescript-eslint/member-delimiter-style': 'error',
                 '@typescript-eslint/member-ordering': 'error',
