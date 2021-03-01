@@ -33,6 +33,7 @@ const reactTypescript = {
                 'import/named': 0,
                 'import/prefer-default-export': 0,
                 'import/no-unresolved': 0,
+                'import/extensions': 0,
                 'default-case': 0,
                 'no-use-before-define': 0,
                 '@typescript-eslint/no-unused-vars': 'error',
