@@ -1,5 +1,4 @@
 const reactTypescript = {
-    files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
     parser: '@typescript-eslint/parser',
     plugins: ['@typescript-eslint', 'react', 'jest', 'filenames'],
     extends: [
