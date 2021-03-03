@@ -1,67 +1,114 @@
-const reactConfig = require('./react');
-
 const reactTypescript = {
-    ...reactConfig,
-    overrides: [
-        {
-            files: ['**/*.ts', '**/*.tsx'],
-            parser: '@typescript-eslint/parser',
-            plugins: ['@typescript-eslint', 'react', 'jest', 'filenames'],
-            extends: [
-                'eslint:recommended',
-                'plugin:@typescript-eslint/recommended',
-                'plugin:jest/recommended',
-                'plugin:react/recommended',
-                'plugin:import/typescript',
-                'airbnb',
-                'airbnb/hooks',
-            ],
-            parserOptions: {
-                ecmaFeatures: {
-                    jsx: true,
-                },
-                ecmaVersion: 2021,
-                sourceType: 'module',
+    files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+    parser: '@typescript-eslint/parser',
+    plugins: ['@typescript-eslint', 'react', 'jest', 'filenames'],
+    extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:jest/recommended',
+        'plugin:react/recommended',
+        'plugin:import/typescript',
+        'airbnb',
+        'airbnb/hooks',
+    ],
+    env: {
+        node: true,
+        jest: true,
+        es2021: true,
+        browser: true,
+    },
+    parserOptions: {
+        ecmaFeatures: {
+            jsx: true,
+        },
+        ecmaVersion: 2021,
+        sourceType: 'module',
+    },
+    rules: {
+        strict: [0, 'global'],
+        indent: [1, 4, {SwitchCase: 1, VariableDeclarator: 1}],
+        'no-tabs': 0,
+        'no-console': [1, {allow: ['warn']}],
+        'max-len': [
+            2,
+            120,
+            2,
+            {
+                ignoreUrls: true,
+                ignoreComments: false,
             },
-            rules: {
-                'react/jsx-filename-extension': [
-                    1,
-                    {extensions: ['.tsx', '.jsx']},
+        ],
+        'no-underscore-dangle': [
+            'error',
+            {
+                allow: [
+                    '_id',
+                    '_index',
+                    '_score',
+                    '_shards',
+                    '_source',
+                    '_type',
+                    '_state',
+                    '_embedded',
                 ],
-                'react/prop-types': 0,
-                'no-unused-vars': 0,
-                'import/named': 0,
-                'import/prefer-default-export': 0,
-                'import/no-unresolved': 0,
-                'import/extensions': 0,
-                'default-case': 0,
-                'no-use-before-define': 0,
-                '@typescript-eslint/no-unused-vars': 'error',
-                '@typescript-eslint/member-delimiter-style': 'error',
-                '@typescript-eslint/member-ordering': 'error',
-                '@typescript-eslint/type-annotation-spacing': 'error',
-                '@typescript-eslint/explicit-function-return-type': 0,
-                '@typescript-eslint/prefer-interface': 0,
-                '@typescript-eslint/no-namespace': 'error',
-                '@typescript-eslint/ban-ts-ignore': 0,
-                '@typescript-eslint/ban-ts-comment': 0,
-                '@typescript-eslint/no-var-requires': 0,
             },
-            settings: {
-                'import/resolver': {
-                    node: {
-                        extensions: [
-                            '.js',
-                            '.jsx',
-                            '.ts',
-                            '.tsx',
-                            '.d.ts',
-                            '.json',
-                            '.mjs',
-                        ],
-                    },
-                },
-                'import/extensions': [
+        ],
+        'no-restricted-syntax': [
+            'error',
+            'ForInStatement',
+            'LabeledStatement',
+            'WithStatement',
+        ],
+        'no-await-in-loop': 0,
+        'no-param-reassign': ['error', {props: false}],
+        'prefer-destructuring': 0,
+        'jest/no-disabled-tests': 'error',
+        'jest/no-focused-tests': 'error',
+        'jest/no-identical-title': 'error',
+        'jest/valid-expect': 'error',
+        'react/no-unused-state': 'error',
+        'react/jsx-handler-names': 'error',
+        'react/jsx-props-no-spreading': 0,
+        'react/forbid-prop-types': 0,
+        'filenames/match-regex': [2, '^[a-z0-9-.]+$', true],
+        'filenames/match-exported': [2, 'kebab'],
+        'import/no-extraneous-dependencies': [
+            'error',
+            {
+                devDependencies: true,
+                optionalDependencies: false,
+                peerDependencies: false,
+            },
+        ],
+        'import/no-namespace': 'error',
+        'react/jsx-filename-extension': [1, {extensions: ['.tsx', '.jsx']}],
+        'react/prop-types': 0,
+        'no-unused-vars': 0,
+        'import/named': 0,
+        'import/prefer-default-export': 0,
+        'import/no-unresolved': 0,
+        'import/extensions': 0,
+        'default-case': 0,
+        'no-use-before-define': 0,
+        '@typescript-eslint/no-unused-vars': 'error',
+        '@typescript-eslint/member-delimiter-style': 'error',
+        '@typescript-eslint/member-ordering': 'error',
+        '@typescript-eslint/type-annotation-spacing': 'error',
+        '@typescript-eslint/explicit-function-return-type': 0,
+        '@typescript-eslint/prefer-interface': 0,
+        '@typescript-eslint/no-namespace': 'error',
+        '@typescript-eslint/ban-ts-ignore': 0,
+        '@typescript-eslint/ban-ts-comment': 0,
+        '@typescript-eslint/no-var-requires': 0,
+        '@typescript-eslint/no-explicit-any': 0,
+    },
+    settings: {
+        'import/parsers': {
+            espree: ['.js', '.jsx', '.ts', '.tsx'],
+        },
+        'import/resolver': {
+            node: {
+                extensions: [
                     '.js',
                     '.jsx',
                     '.ts',
@@ -70,12 +117,21 @@ const reactTypescript = {
                     '.json',
                     '.mjs',
                 ],
-                react: {
-                    version: 'detect',
-                },
             },
         },
-    ],
+        'import/extensions': [
+            '.js',
+            '.jsx',
+            '.ts',
+            '.tsx',
+            '.d.ts',
+            '.json',
+            '.mjs',
+        ],
+        react: {
+            version: 'detect',
+        },
+    },
 };
 
 module.exports = reactTypescript;
