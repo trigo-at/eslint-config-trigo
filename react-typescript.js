@@ -66,7 +66,7 @@ const reactTypescript = {
         'jest/no-identical-title': 'error',
         'jest/valid-expect': 'error',
         'react/no-unused-state': 'error',
-        'react/jsx-handler-names': 'error',
+        'react/jsx-handler-names': '1',
         'react/jsx-props-no-spreading': 0,
         'react/forbid-prop-types': 0,
         'filenames/match-regex': [2, '^[a-z0-9-.]+$', true],
@@ -100,6 +100,7 @@ const reactTypescript = {
         '@typescript-eslint/ban-ts-comment': 0,
         '@typescript-eslint/no-var-requires': 0,
         '@typescript-eslint/no-explicit-any': 0,
+        '@typescript-eslint/explicit-module-boundary-types': 0,
     },
     settings: {
         'import/parsers': {
