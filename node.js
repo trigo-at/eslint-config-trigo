@@ -9,11 +9,6 @@ module.exports = {
         ecmaVersion: 2021,
     },
     plugins: ['jest', 'filenames', 'node'],
-    settings: {
-        'import/parsers': {
-            espree: ['.js', '.jsx', '.ts', '.tsx'],
-        },
-    },
     env: {
         node: true,
         es2021: true,

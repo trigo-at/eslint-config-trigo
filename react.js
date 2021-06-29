@@ -1,6 +1,5 @@
 module.exports = {
-    parser: '@babel/eslint-parser',
-    plugins: ['@babel', 'react', 'jest', 'filenames'],
+    plugins: ['react', 'jest', 'filenames'],
     extends: [
         'eslint:recommended',
         'plugin:react/recommended',
@@ -15,15 +14,6 @@ module.exports = {
         ecmaVersion: 2021,
         sourceType: 'module',
     },
-    settings: {
-        'import/parsers': {
-            espree: ['.js', '.jsx', '.ts', '.tsx'],
-        },
-        react: {
-            version: 'detect',
-        },
-    },
-
     env: {
         node: true,
         jest: true,

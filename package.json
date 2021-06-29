@@ -25,10 +25,6 @@
     "node": ">=15"
   },
   "peerDependencies": {
-    "@babel/core": "^7.13.16",
-    "@babel/eslint-parser": "^7.13.14",
-    "@babel/eslint-plugin": "^7.13.16",
-    "@babel/preset-react": "^7.13.13",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
     "eslint": "^7.25.0",
@@ -44,13 +40,9 @@
     "typescript": "^4.2.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.5",
-    "@babel/eslint-parser": "^7.14.5",
-    "@babel/eslint-plugin": "^7.14.5",
-    "@babel/preset-react": "^7.14.5",
-    "@typescript-eslint/eslint-plugin": "^4.26.1",
-    "@typescript-eslint/parser": "^4.26.1",
-    "eslint": "^7.28.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "eslint": "^7.29.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
@@ -63,10 +55,10 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^6.0.0",
-    "jest": "^27.0.4",
+    "jest": "^27.0.6",
     "lint-staged": "^11.0.0",
     "pinst": "^2.1.6",
-    "prettier": "^2.3.1",
-    "typescript": "^4.3.2"
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.4"
   }
 }
