@@ -3,8 +3,6 @@ const nodeTypescript = {
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:jest/recommended',
-        'plugin:node/recommended',
-        'plugin:import/typescript',
         'airbnb-base',
     ],
     env: {
