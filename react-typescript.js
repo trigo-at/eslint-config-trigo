@@ -101,6 +101,10 @@ const reactTypescript = {
         '@typescript-eslint/no-var-requires': 0,
         '@typescript-eslint/no-explicit-any': 0,
         '@typescript-eslint/explicit-module-boundary-types': 0,
+        'react/function-component-definition': [
+            2,
+            {namedComponents: 'arrow-function'},
+        ],
     },
     settings: {
         'import/parsers': {
