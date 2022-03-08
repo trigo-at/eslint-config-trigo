@@ -6,6 +6,7 @@ const reactTypescript = {
         'plugin:@typescript-eslint/recommended',
         'plugin:jest/recommended',
         'plugin:react/recommended',
+        'plugin:import/recommended',
         'plugin:import/typescript',
         'airbnb',
         'airbnb/hooks',
@@ -121,6 +122,9 @@ const reactTypescript = {
                     '.json',
                     '.mjs',
                 ],
+            },
+            typescript: {
+                alwaysTryTypes: true,
             },
         },
         'import/extensions': [
