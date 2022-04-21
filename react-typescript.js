@@ -1,6 +1,6 @@
 const reactTypescript = {
     parser: '@typescript-eslint/parser',
-    plugins: ['@typescript-eslint', 'react', 'jest', 'filenames'],
+    plugins: ['@typescript-eslint', 'react', 'jest', 'filenames', 'import'],
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
@@ -109,33 +109,13 @@ const reactTypescript = {
     },
     settings: {
         'import/parsers': {
-            espree: ['.js', '.jsx', '.ts', '.tsx'],
+            '@typescript-eslint/parser': ['.ts', '.tsx'],
         },
         'import/resolver': {
-            node: {
-                extensions: [
-                    '.js',
-                    '.jsx',
-                    '.ts',
-                    '.tsx',
-                    '.d.ts',
-                    '.json',
-                    '.mjs',
-                ],
-            },
             typescript: {
                 alwaysTryTypes: true,
             },
         },
-        'import/extensions': [
-            '.js',
-            '.jsx',
-            '.ts',
-            '.tsx',
-            '.d.ts',
-            '.json',
-            '.mjs',
-        ],
         react: {
             version: 'detect',
         },
