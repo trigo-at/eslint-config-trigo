@@ -74,7 +74,7 @@ const nodeTypescript = {
     },
     settings: {
         'import/parsers': {
-            espree: ['.js', '.jsx', '.ts', '.tsx', '.mts', '.mtsx'],
+            espree: ['.js', '.jsx', '.ts', '.tsx', '.mts'],
         },
         'import/resolver': {
             node: {
@@ -84,7 +84,6 @@ const nodeTypescript = {
                     '.ts',
                     '.tsx',
                     '.mts',
-                    '.mtsx',
                     '.d.ts',
                     '.json',
                     '.mjs',
@@ -97,7 +96,6 @@ const nodeTypescript = {
             '.ts',
             '.tsx',
             '.mts',
-            '.mtsx',
             '.d.ts',
             '.json',
             '.mjs',
