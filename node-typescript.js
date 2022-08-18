@@ -4,6 +4,7 @@ const nodeTypescript = {
         'plugin:@typescript-eslint/recommended',
         'plugin:jest/recommended',
         'airbnb-base',
+        'plugin:import/typescript',
     ],
     env: {
         node: true,
@@ -73,7 +74,7 @@ const nodeTypescript = {
     },
     settings: {
         'import/parsers': {
-            espree: ['.js', '.jsx', '.ts', '.tsx'],
+            espree: ['.js', '.jsx', '.ts', '.tsx', '.mts', '.mtsx'],
         },
         'import/resolver': {
             node: {
@@ -82,6 +83,8 @@ const nodeTypescript = {
                     '.jsx',
                     '.ts',
                     '.tsx',
+                    '.mts',
+                    '.mtsx',
                     '.d.ts',
                     '.json',
                     '.mjs',
@@ -93,6 +96,8 @@ const nodeTypescript = {
             '.jsx',
             '.ts',
             '.tsx',
+            '.mts',
+            '.mtsx',
             '.d.ts',
             '.json',
             '.mjs',
